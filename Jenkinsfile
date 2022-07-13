@@ -24,7 +24,7 @@ pipeline {
                 
             }
         }
-        stage('Sanity check') {
+        stage('Selenium Testing') {
             steps {
                 input "Does the staging environment look ok?"
             }
