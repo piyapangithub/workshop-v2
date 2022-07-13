@@ -21,8 +21,16 @@ pipeline {
             steps {
                 sh('ls -al')
                 sh('printenv')
+                
             }
         }
+        stage("Stage 1") {
+            steps {
+                script {
+                    error "This pipeline stops here!"
+        }
+    }
+}
 
         // stage('Ansible prepareations docker ') {
         //     steps{
