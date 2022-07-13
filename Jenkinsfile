@@ -24,7 +24,7 @@ pipeline {
                 
             }
         }
-        stage("Stage 1") {
+        stage("Print Environment") {
             steps {
                 script {
                     error "This pipeline stops here!"
