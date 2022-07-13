@@ -24,7 +24,7 @@ pipeline {
                 
             }
         }
-        stage("Print Environment") {
+        stage("Selenium Test") {
             steps {
                 script {
                     error "This pipeline stops here!"
