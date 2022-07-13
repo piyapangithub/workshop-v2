@@ -24,13 +24,11 @@ pipeline {
                 
             }
         }
-        stage("Selenium Test") {
+        stage('Sanity check') {
             steps {
-                script {
-                   
+                input "Does the staging environment look ok?"
+            }
         }
-    }
-}
 
         // stage('Ansible prepareations docker ') {
         //     steps{
