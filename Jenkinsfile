@@ -43,7 +43,7 @@ pipeline {
         }
          stage('Selenium Testing') {
             steps {
-                input "Testing it ok ??"
+                node "test.js"
             }
         }
 
