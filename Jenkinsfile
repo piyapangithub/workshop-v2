@@ -45,7 +45,7 @@ pipeline {
             steps {
                 sh ('ls -al')
                 sh ('cd selenium')
-                sh ('node test.js')
+                sh ('ls -al')
             }
         }
 
