@@ -44,7 +44,7 @@ pipeline {
          stage('Selenium Testing') {
             steps {
                 sh ('ls -al')
-                sh ('cd selenium')
+                sh ('selenium')
                 sh ('ls -al')
             }
         }
