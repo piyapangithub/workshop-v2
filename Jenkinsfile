@@ -41,9 +41,9 @@ pipeline {
                 //}
             //}
         //}
-         stage('Test') {
+         stage('Selenium Testing') {
             steps {
-                sh ('./workshop-v2/selenium/test.js')
+                input "Does the staging environment look ok?"
                 
             }
         }
