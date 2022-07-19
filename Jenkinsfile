@@ -41,9 +41,16 @@ pipeline {
                 //}
             //}
         //}
-         stage('Selenium Testing') {
+         //stage('Selenium Testing') {
+            //steps {
+                //input "Does the staging environment look ok?"
+                
+            //}
+        //}
+
+        stage('Selenium Testing') {
             steps {
-                input "Does the staging environment look ok?"
+                input "node test.js"
                 
             }
         }
