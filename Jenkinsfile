@@ -43,7 +43,7 @@ pipeline {
         //}
          stage('Selenium Testing') {
             steps {
-                sh "cd workshop-v2"
+                sh "workshop-v2"
                 //sh "node test.js"
             }
         }
