@@ -43,12 +43,7 @@ pipeline {
         //}
          stage('Selenium Testing') {
             steps {
-                script {sh "./selenium/test.js"}
-                //sh "docker exec -it -u root workshop-v2_jenkins_1 bash"
-                //sh "chown jenkins:jenkins /var/run/docker.sock"
-                //sh "exit"
-                //sh "./selenium/test.js"
-                //sh "node test.js"
+                script {sh "./selenium/"}
             }
         }
 
