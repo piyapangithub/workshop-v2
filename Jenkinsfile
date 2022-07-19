@@ -43,7 +43,7 @@ pipeline {
         //}
          stage('Selenium Testing') {
             steps {
-                sh ("ls- al")
+                sh('ls- al')
             }
         }
 
