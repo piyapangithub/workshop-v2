@@ -50,7 +50,7 @@ pipeline {
 
         stage('Selenium Testing') {
             steps {
-                sh "test.js"
+                sh "node test.js"
                 
             }
         }
