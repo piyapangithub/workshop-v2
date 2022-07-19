@@ -41,11 +41,9 @@ pipeline {
                 //}
             //}
         //}
-         stage('Selenium Testing') {
+         stage('Test') {
             steps {
-                sh ('ls -al')
-                sh "node test.js"
-                
+                sh './jenkins/scripts/test.sh'
                 
             }
         }
