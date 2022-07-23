@@ -44,8 +44,8 @@ pipeline {
          
         stage('Selenium Testing') {
             steps {
+                echo 'node test.js'
                 input "Does the staging environment look ok?"
-                
             }
         }
         
